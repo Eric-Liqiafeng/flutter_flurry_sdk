@@ -20,13 +20,13 @@ class _MyAppState extends State<MyApp> {
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initFlurry() async {
     await FlutterFlurrySdk.initialize(
-      androidKey: "ZC5X9XP66T8N3VR7HNR4",
-      iosKey: "CJDG53T7VX9KHZMPNB7Q",
+      androidKey: "androidKey",
+      iosKey: "iosKey",
       performanceMetrics: true,
       enableLog: true,
     );
-    await FlutterFlurrySdk.setUserId("1234");
-    await FlutterFlurrySdk.logEvent("testflurry");
+    await FlutterFlurrySdk.setUserId("user1234");
+    await FlutterFlurrySdk.logEvent("open_app");
   }
 
   @override
@@ -34,10 +34,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Flutter Flurry SDK example'),
         ),
         body: Center(
-          child: Text('Flurry analytics example.'),
+          child: Text('Example'),
         ),
       ),
     );
