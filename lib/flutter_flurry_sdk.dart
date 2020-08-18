@@ -8,7 +8,7 @@ class FlutterFlurrySdk {
 
   static FlutterFlurrySdk _singleton;
 
-  /// Constructs a singleton instance of [FlutterBranchSdk].
+  /// Constructs a singleton instance of [FlutterFlurrySdk].
   factory FlutterFlurrySdk() {
     if (_singleton == null) {
       _singleton = FlutterFlurrySdk._();

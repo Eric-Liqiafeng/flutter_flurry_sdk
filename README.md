@@ -1,6 +1,14 @@
 # flutter_flurry_sdk
 
-A new flutter plugin project.
+Draft for a Flutter plugin to use Flurry Analytics.  
+Features:
+- Log sessions
+- Crash detections
+- Event log and End Timed Event
+- Set User Id
+
+Todo:
+- Add another Featurees of SDK
 
 ## Getting Started
 
