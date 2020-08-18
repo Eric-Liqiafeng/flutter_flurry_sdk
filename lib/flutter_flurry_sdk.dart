@@ -6,6 +6,18 @@ class FlutterFlurrySdk {
   static const MethodChannel channel =
       const MethodChannel('flutter_flurry_sdk/message');
 
+  static FlutterFlurrySdk _singleton;
+
+  /// Constructs a singleton instance of [FlutterBranchSdk].
+  factory FlutterFlurrySdk() {
+    if (_singleton == null) {
+      _singleton = FlutterFlurrySdk._();
+    }
+    return _singleton;
+  }
+
+  FlutterFlurrySdk._();
+
   static Future<void> initialize({
     String androidKey = "",
     String iosKey = "",
